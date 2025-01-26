@@ -31,7 +31,7 @@ export default function Home() {
                     How AI Influences Our Lifes
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    Artificial Intelligence (AI) has become an essential part of our daily lives, influencing various aspects in significant ways.
+                    Artificial Intelligence (AI) has become an essential part of our daily lives and influencing various aspects in significant ways.
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <Link href="/1blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -94,11 +94,11 @@ export default function Home() {
                     CATEGORY
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    How Can We Use AI In Our Daily Life's
+                    How Can We Use AI In Our Daily Lifes
                   </h1>
                   <p className="leading-relaxed mb-3">
                     Artificial Intelligence (AI) has become a part of our daily 
-                    lives, providing solutions that enhance convenience, productivity, and efficiency. 
+                    lives and providing solutions that enhance convenience and productivity and efficiency. 
                   </p>
                   <div className="flex items-center flex-wrap">
                     <Link href="/2blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -164,7 +164,7 @@ export default function Home() {
                     Why AI Was Invented
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    AI was invented to solve complex problems, automate tasks, and mimic human intelligence to make life easier and more efficient..
+                    AI was invented to solve complex problems and automate tasks and mimic human intelligence to make life easier and more efficient.
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <Link href="/3blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -236,7 +236,7 @@ export default function Home() {
                     How AI Influences Our Lifes
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    Artificial Intelligence (AI) has become an essential part of our daily lives, influencing various aspects in significant ways.
+                    Artificial Intelligence (AI) has become an essential part of our daily lives and influencing various aspects in significant ways.
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <Link href="/1blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -299,11 +299,11 @@ export default function Home() {
                     CATEGORY
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    How Can We Use AI In Our Daily Life's
+                    How Can We Use AI In Our Daily Lifes
                   </h1>
                   <p className="leading-relaxed mb-3">
                     Artificial Intelligence (AI) has become a part of our daily 
-                    lives, providing solutions that enhance convenience, productivity, and efficiency. 
+                    lives, providing solutions that enhance convenience and productivity and efficiency. 
                   </p>
                   <div className="flex items-center flex-wrap">
                     <Link href="/2blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -369,7 +369,7 @@ export default function Home() {
                     Why AI Was Invented
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    AI was invented to solve complex problems, automate tasks, and mimic human intelligence to make life easier and more efficient..
+                    AI was invented to solve complex problems and automate tasks and mimic human intelligence to make life easier and more efficient.
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <Link href="/3blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -441,7 +441,7 @@ export default function Home() {
                     How AI Influences Our Lifes
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    Artificial Intelligence (AI) has become an essential part of our daily lives, influencing various aspects in significant ways.
+                    Artificial Intelligence (AI) has become an essential part of our daily lives and influencing various aspects in significant ways.
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <Link href="/1blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -504,11 +504,11 @@ export default function Home() {
                     CATEGORY
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    How Can We Use AI In Our Daily Life's
+                    How Can We Use AI In Our Daily Lifes
                   </h1>
                   <p className="leading-relaxed mb-3">
                     Artificial Intelligence (AI) has become a part of our daily 
-                    lives, providing solutions that enhance convenience, productivity, and efficiency. 
+                    lives, providing solutions that enhance convenience and productivity and efficiency. 
                   </p>
                   <div className="flex items-center flex-wrap">
                     <Link href="/2blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -574,7 +574,7 @@ export default function Home() {
                     Why AI Was Invented
                   </h1>
                   <p className="leading-relaxed mb-3">
-                    AI was invented to solve complex problems, automate tasks, and mimic human intelligence to make life easier and more efficient..
+                    AI was invented to solve complex problems and automate tasks and mimic human intelligence to make life easier and more efficient.
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <Link href="/3blog" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
