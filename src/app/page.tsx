@@ -638,7 +638,7 @@ export default function Home() {
 
 
 function CommentBox() {
-  const [comments, setComments] = useState<string[]>([]); // Explicitly define the type of comments as string[]
+  const [comments, setComments] = useState<string[]>([]);
   const [newComment, setNewComment] = useState("");
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [editingText, setEditingText] = useState("");
@@ -661,7 +661,7 @@ function CommentBox() {
 
   const saveEdit = () => {
     const updatedComments = [...comments];
-    updatedComments[editingIndex!] = editingText; // Using non-null assertion since we know editingIndex is not null here
+    updatedComments[editingIndex!] = editingText;
     setComments(updatedComments);
     setEditingIndex(null);
   };
@@ -673,7 +673,7 @@ function CommentBox() {
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
           placeholder="Write a comment..."
-          className="border text-black rounded px-2 py-1 flex-1"
+          className="border rounded px-2 py-1 flex-1"
         />
         <button onClick={addComment} className="bg-blue-500 text-white px-4 py-2 rounded">Post</button>
       </div>
@@ -688,7 +688,7 @@ function CommentBox() {
                 className="border rounded px-2 py-1 flex-1"
               />
             ) : (
-              <span className="flex-1">{comment}</span>
+              <span className="flex-1 text-black">{comment}</span>  {/* Set text color to black here */}
             )}
             <div className="flex gap-2">
               {editingIndex === index ? (
