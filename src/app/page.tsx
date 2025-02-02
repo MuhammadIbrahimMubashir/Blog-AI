@@ -1,9 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import abc from "../app/images/abc.jpeg"
 import f from "../app/images/f.jpeg"
 import a from "../app/images/a.png"
 import c from "../app/images/c.jpg"
 import Link from "next/link";
+import { useState } from "react";
+import { Edit, Trash2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -628,6 +632,81 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <CommentBox/>
     </div>
   );
 }
+
+
+function CommentBox() {
+  const [comments, setComments] = useState([]);
+  const [newComment, setNewComment] = useState("");
+  const [editingIndex, setEditingIndex] = useState(null);
+  const [editingText, setEditingText] = useState("");
+
+  const addComment = () => {
+    if (newComment.trim() !== "") {
+      setComments([...comments, newComment]);
+      setNewComment("");
+    }
+  };
+
+  const deleteComment = (index) => {
+    setComments(comments.filter((_, i) => i !== index));
+  };
+
+  const editComment = (index) => {
+    setEditingIndex(index);
+    setEditingText(comments[index]);
+  };
+
+  const saveEdit = () => {
+    let updatedComments = [...comments];
+    updatedComments[editingIndex] = editingText;
+    setComments(updatedComments);
+    setEditingIndex(null);
+  };
+
+  return (
+    <div className="max-w-lg mx-auto p-4">
+      <div className="flex gap-2">
+        <input
+          value={newComment}
+          onChange={(e) => setNewComment(e.target.value)}
+          placeholder="Write a comment..."
+          className="border rounded px-2 py-1 flex-1"
+        />
+        <button onClick={addComment} className="bg-blue-500 text-white px-4 py-2 rounded">Post</button>
+      </div>
+
+      <div className="mt-4 space-y-2">
+        {comments.map((comment, index) => (
+          <div key={index} className="p-3 border rounded flex justify-between items-center">
+            {editingIndex === index ? (
+              <input
+                value={editingText}
+                onChange={(e) => setEditingText(e.target.value)}
+                className="border rounded px-2 py-1 flex-1"
+              />
+            ) : (
+              <span className="flex-1">{comment}</span>
+            )}
+            <div className="flex gap-2">
+              {editingIndex === index ? (
+                <button className="bg-green-500 text-white px-3 py-1 rounded" onClick={saveEdit}>Save</button>
+              ) : (
+                <button className="text-blue-500" onClick={() => editComment(index)}>
+                  <Edit size={16} />
+                </button>
+              )}
+              <button className="text-red-500" onClick={() => deleteComment(index)}>
+                <Trash2 size={16} />
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
