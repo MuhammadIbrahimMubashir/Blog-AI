@@ -636,7 +636,6 @@ export default function Home() {
   );
 }
 
-
 function CommentBox() {
   const [comments, setComments] = useState<string[]>([]);
   const [newComment, setNewComment] = useState("");
@@ -675,7 +674,9 @@ function CommentBox() {
           placeholder="Write a comment..."
           className="border rounded px-2 py-1 flex-1"
         />
-        <button onClick={addComment} className="bg-blue-500 text-white px-4 py-2 rounded">Post</button>
+        <button onClick={addComment} className="bg-blue-500 text-white px-4 py-2 rounded">
+          Post
+        </button>
       </div>
 
       <div className="mt-4 space-y-2">
@@ -688,11 +689,13 @@ function CommentBox() {
                 className="border rounded px-2 py-1 flex-1"
               />
             ) : (
-              <span className="flex-1 text-black">{comment}</span>  {/* Set text color to black here */}
+              <span className="flex-1 text-black">{comment}</span>
             )}
             <div className="flex gap-2">
               {editingIndex === index ? (
-                <button className="bg-green-500 text-white px-3 py-1 rounded" onClick={saveEdit}>Save</button>
+                <button className="bg-green-500 text-white px-3 py-1 rounded" onClick={saveEdit}>
+                  Save
+                </button>
               ) : (
                 <button className="text-blue-500" onClick={() => editComment(index)}>
                   ✏️
