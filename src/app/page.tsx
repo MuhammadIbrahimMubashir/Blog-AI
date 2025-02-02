@@ -672,7 +672,7 @@ function CommentBox() {
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
           placeholder="Write a comment..."
-          className="border rounded px-2 py-1 flex-1"
+          className="border rounded px-2 py-1 flex-1 text-black" // Ensure text inside is black
         />
         <button onClick={addComment} className="bg-blue-500 text-white px-4 py-2 rounded">
           Post
@@ -686,10 +686,10 @@ function CommentBox() {
               <input
                 value={editingText}
                 onChange={(e) => setEditingText(e.target.value)}
-                className="border rounded px-2 py-1 flex-1 text-black"
+                className="border rounded px-2 py-1 flex-1 text-black" // Ensure text inside is black
               />
             ) : (
-              <span className="flex-1 text-black">{comment}</span>
+              <span className="flex-1 text-black">{comment}</span> // Comment text display in black
             )}
             <div className="flex gap-2">
               {editingIndex === index ? (
