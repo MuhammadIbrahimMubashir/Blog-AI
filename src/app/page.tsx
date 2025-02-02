@@ -638,9 +638,9 @@ export default function Home() {
 
 
 function CommentBox() {
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState<string[]>([]); // Explicitly define the type of comments as string[]
   const [newComment, setNewComment] = useState("");
-  const [editingIndex, setEditingIndex] = useState(null);
+  const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [editingText, setEditingText] = useState("");
 
   const addComment = () => {
@@ -650,18 +650,18 @@ function CommentBox() {
     }
   };
 
-  const deleteComment = (index) => {
+  const deleteComment = (index: number) => {
     setComments(comments.filter((_, i) => i !== index));
   };
 
-  const editComment = (index) => {
+  const editComment = (index: number) => {
     setEditingIndex(index);
     setEditingText(comments[index]);
   };
 
   const saveEdit = () => {
     const updatedComments = [...comments];
-    updatedComments[editingIndex] = editingText;
+    updatedComments[editingIndex!] = editingText; // Using non-null assertion since we know editingIndex is not null here
     setComments(updatedComments);
     setEditingIndex(null);
   };
