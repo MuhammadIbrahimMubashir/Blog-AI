@@ -660,7 +660,7 @@ function CommentBox() {
   };
 
   const saveEdit = () => {
-    let updatedComments = [...comments];
+    const updatedComments = [...comments];
     updatedComments[editingIndex] = editingText;
     setComments(updatedComments);
     setEditingIndex(null);
