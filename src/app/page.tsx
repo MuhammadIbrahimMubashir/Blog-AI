@@ -686,7 +686,7 @@ function CommentBox() {
               <input
                 value={editingText}
                 onChange={(e) => setEditingText(e.target.value)}
-                className="border rounded px-2 py-1 flex-1"
+                className="border rounded px-2 py-1 flex-1 text-black"
               />
             ) : (
               <span className="flex-1 text-black">{comment}</span>
