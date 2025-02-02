@@ -7,7 +7,6 @@ import a from "../app/images/a.png"
 import c from "../app/images/c.jpg"
 import Link from "next/link";
 import { useState } from "react";
-import { Edit, Trash2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -696,11 +695,11 @@ function CommentBox() {
                 <button className="bg-green-500 text-white px-3 py-1 rounded" onClick={saveEdit}>Save</button>
               ) : (
                 <button className="text-blue-500" onClick={() => editComment(index)}>
-                  <Edit size={16} />
+                  ✏️
                 </button>
               )}
               <button className="text-red-500" onClick={() => deleteComment(index)}>
-                <Trash2 size={16} />
+                ❌
               </button>
             </div>
           </div>
@@ -709,4 +708,3 @@ function CommentBox() {
     </div>
   );
 }
-
